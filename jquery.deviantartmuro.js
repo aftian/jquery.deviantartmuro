@@ -7,6 +7,8 @@
 
 "use strict";
 
+var version = "1.0.0";
+
 // $('.damuro-embeds').damuro({ setting: value }); // return original set for chaining
 // $('...').damuro(settings, function () { done; }, function () { fail; });
 // $('...').damuro(function () { done; }, function () { fail; });
@@ -121,6 +123,8 @@ DAMuro.defaults = {
     origin:  '*',
     autoload: true
     };
+
+DAMuro.version = version;
 
 $.extend(DAMuro.prototype, {
 
