@@ -20,7 +20,11 @@ $('#damuro-goes-here').damuro({
         })
     .fail(function (data) {
             $(this).hide().damuro().remove();
-            $('body').append('<p>All aboard the fail whale: ' + data.error + '.</p>');
+            if (data.error) {
+                $('body').append('<p>All aboard the fail whale: ' + data.error + '.</p>');
+            } else {
+                $('body').append("<p>Be that way then, don't edit anything.</p>");
+            }
         });
 
 })(window, jQuery);
