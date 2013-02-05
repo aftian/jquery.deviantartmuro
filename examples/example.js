@@ -14,7 +14,7 @@ $('#damuro-goes-here').damuro({
     .damuro()
     .done(function (data) {
             if (data.image && !/\'/.test(data.image)) {
-                $('body').css('backgroundImage', "url('" + data.image + "')");
+                $('.inner header').css('backgroundImage', "url('" + data.image + "')");
             }
             $(this).hide().damuro().remove();
         })
