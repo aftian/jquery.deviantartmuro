@@ -10,6 +10,7 @@ Your users aren't required to have a [deviantART][da] or [Sta.sh][stash] account
 The documentation is maintained within the GitHib wiki:
 
  * http://github.com/deviantART/jquery.deviantartmuro/wiki/Home
+ * http://github.com/deviantART/jquery.deviantartmuro/wiki/Reference
 
 If you're interested in the underlying [deviantART muro][damuro] API, it has its own wiki too:
 
