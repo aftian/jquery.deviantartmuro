@@ -59,7 +59,12 @@ var DAMuro = $.deviantartmuro = $.damuro = function (el, options, done, fail) {
         backgroundSize:     'contain',
         backgroundRepeat:   'no-repeat'
         };
+    // TODO: also check named presets
     if (o.background && !/^rgba/.test(o.background)) {
+        // Ensure our background param is an absolute url.
+        var img = window.document.createElement("img");
+        img.src = o.background;
+        o.background = img.src;
         commonCss.backgroundImage = 'url("' + o.background + '")';
     }
 
