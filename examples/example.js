@@ -3,6 +3,7 @@
 
 $('#damuro-goes-here').damuro({
     background: 'images/crane_squared_by_mudimba_and_draweverywhere.png',
+    sandbox:    'html/deviantart_muro_sandbox.html',
     splashText: 'Click dat thang to get phat wit dA muro',
     splashCss: {
         color: '#33a'
