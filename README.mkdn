@@ -5,8 +5,6 @@ jquery.deviantartmuro
 
 Embedding [deviantART muro][damuro] in your site allows you to pass images from your site to [deviantART muro][damuro], allow your users to edit those images, and then hand the saved image data back to your site. You can also make scripted use of a number of [deviantART muro][damuro] tools such as filters.
 
-Your users aren't required to have a [deviantART][da] or [Sta.sh][stash] account, but if they have one or they sign-up within the application, there's a number of added benefits such as [Sta.sh][stash] integration and [deviantART muro][damuro] redraw that happen automatically.
-
 For further documentation and examples, visit these pages:
 
  * [jQuery.deviantartmuro Home Page](http://deviantart.github.com/jquery.deviantartmuro/).
