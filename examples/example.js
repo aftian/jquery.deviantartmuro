@@ -2,9 +2,9 @@
 "use strict";
 
 $('#damuro-goes-here').damuro({
-    background: 'images/crane_squared_by_mudimba_and_draweverywhere.png',
-    sandbox:    'html/deviantart_muro_sandbox.html',
-    splashText: 'Click dat thang to get phat wit dA muro',
+    background:  'images/crane_squared_by_mudimba_and_draweverywhere.png',
+    sandbox:     'html/deviantart_muro_sandbox.html',
+    loadingText: 'This is a customized loading message...',
     splashCss: {
         color: '#33a'
         },

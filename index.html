@@ -65,6 +65,54 @@
 <div id="damuro-goes-here"></div>
 <script src="examples/example.js"></script>
 
+<h1>Example Source</h1>
+
+<div class="highlight">
+<pre>
+$('#damuro-goes-here').damuro({
+    // Say what image we want the user to embed.
+    background:  'images/crane_squared_by_mudimba_and_draweverywhere.png',
+    // Locate a sandbox to quarantine third-party javascript in.
+    sandbox:     'html/deviantart_muro_sandbox.html',
+    // Set a custom loading screen message.
+    loadingText: 'This is a customized loading message...',
+    // Make the "click to play" splash screen have a funky colour.
+    splashCss: {
+        color: '#33a'
+        },
+    // We don't want to have deviantART muro load automatically.
+    autoload: false
+    })
+    // Bind a single-use onclick handler to open muro when they click on the splash screen.
+    .one('click', function () { $(this).damuro().open(); })
+    // Chain down to the damuro object rather than $('#damuro-goes-here').
+    .damuro()
+    // The .damuro() object is a promise, so lets bind a done() and fail() handler.
+    .done(function (data) {
+            if (data.image && !/\'/.test(data.image)) {
+                // Here's where you'd save the image, we'll just set the header background as an example.
+                $('.inner').css('backgroundImage', "url('" + data.image + "')");
+                // And scroll to the top so you see it.
+                $('html, body').animate({
+                    scrollTop: $('.inner').offset().top
+                    }, 200);
+            }
+            // And remove deviantART muro from the page.
+            $(this).hide().damuro().remove();
+        })
+    .fail(function (data) {
+            $(this).hide().damuro().remove();
+            if (data.error) {
+                // Something failed in saving the image.
+                $('body').append('<p>All aboard the fail whale: ' + data.error + '.</p>');
+            } else {
+                // The user pressed "done" without making any changes.
+                $('body').append("<p>Be that way then, don't edit anything.</p>");
+            }
+        });
+</pre>
+</div>
+
 <h1>Documentation</h1>
 
 <p>The documentation is maintained within the GitHib wiki:</p>
