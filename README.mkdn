@@ -17,13 +17,6 @@ If you're interested in the underlying [deviantART muro][damuro] API, it has its
 
  * [Introduction](http://github.com/deviantART/embedded-deviantART-muro/wiki/Home).
 
-Release status
-==============
-
-This code is currently considered pre-alpha and a work-in-progress intended for third-party developer early access and feedback. The underlying [deviantART muro][damuro] API and example code are currently in a state of flux and subject to breakage without notice, although the jQuery plugin endeavours to provide a stable programatic interface to that underlying API.
-
-We will update this status message and tag a release as and when this status changes.
-
 Licenses
 ========
 
