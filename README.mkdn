@@ -19,14 +19,21 @@ Example
 Using [jquery.deviantartmuro][jquery.deviantartmuro] is as simple as this code snippet:
 
 ```javascript
+// Embed deviantART muro within the element with id "damuro-goes-here".
 $('#damuro-goes-here').damuro({
+    // Say what image we want the user to embed.
     background: '../images/crane_squared_by_mudimba_and_draweverywhere.png',
+    // We don't want to have deviantART muro load automatically.
     autoload: false
     })
+    // Bind a single-use onclick handler to open muro when they click on the splash screen
     .one('click', function () { $(this).damuro().open(); })
+    // Chain down to the damuro object rather than $('#damuro-goes-here')
     .damuro()
+    // The .damuro() object is a promise, so lets bind a done() and fail() handler.
     .done(function (data) {
-            if (data.image && !/\'/.test(data.image)) {
+            // Here's where you'd save the image, we'll just set the page background as an example
+            if (data.image && !/'/.test(data.image)) {
                 $('body').css('backgroundImage', "url('" + data.image + "')");
             }
             $(this).hide().damuro().remove();
@@ -34,14 +41,16 @@ $('#damuro-goes-here').damuro({
     .fail(function (data) {
             $(this).hide().damuro().remove();
             if (data.error) {
+                // Something failed in saving the image.
                 $('body').append('<p>All aboard the fail whale: ' + data.error + '.</p>');
             } else {
+                // The user pressed "done" without making any changes.
                 $('body').append("<p>Be that way then, don't edit anything.</p>");
             }
         });
 ```
 
-To see this demo in action you can visit our [home page](http://deviantart.github.com/jquery.deviantartmuro/).
+To see a demo like this in action you can visit our [home page](http://deviantart.github.com/jquery.deviantartmuro/).
 
 Licenses
 ========
