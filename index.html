@@ -72,8 +72,7 @@ hljs.initHighlightingOnLoad();
 
 <h1>Example Source</h1>
 
-<pre style="padding: 0; margin-left: -140px; margin-right: -140px;"><code class="javascript" style="margin-bottom: 0px;">
-$('#damuro-goes-here').damuro({
+<pre style="padding: 0; margin-left: -140px; margin-right: -140px;"><code class="javascript" style="margin-bottom: 0px;">$('#damuro-goes-here').damuro({
     // Say what image we want the user to embed.
     background:  'images/crane_squared_by_mudimba_and_draweverywhere.png',
     // Locate a sandbox to quarantine third-party javascript in.
@@ -108,13 +107,12 @@ $('#damuro-goes-here').damuro({
             $(this).hide().damuro().remove();
             if (data.error) {
                 // Something failed in saving the image.
-                $('body').append('<p>All aboard the fail whale: ' + data.error + '.</p>');
+                $('body').append('&lt;p&gt;All aboard the fail whale: ' + data.error + '.&lt;/p&gt;');
             } else {
                 // The user pressed "done" without making any changes.
-                $('body').append("<p>Be that way then, don't edit anything.</p>");
+                $('body').append("&lt;p&gt;Be that way then, don't edit anything.&lt;/p&gt;");
             }
-        });
-</code></pre>
+        });</code></pre>
 
 <h1>Documentation</h1>
 
