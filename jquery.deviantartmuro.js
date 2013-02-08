@@ -7,7 +7,7 @@
 
 "use strict";
 
-var version = "1.0.1";
+var version = "1.0.2";
 
 // $('.damuro-embeds').damuro({ setting: value }); // return original set for chaining
 // $('...').damuro(settings, function () { done; }, function () { fail; });
@@ -133,12 +133,6 @@ DAMuro.version = version;
 
 $.extend(DAMuro.prototype, {
 
-    log: function () {
-        if (window.console && window.console.log) {
-            window.console.log.apply(this, arguments);
-        }
-    },
-
     /**
      * Returns the promise object of the last promise-creating action.
      * Not a fan of stateful behaviours, but only real way to support
@@ -154,7 +148,6 @@ $.extend(DAMuro.prototype, {
             return this.currentView;
         }
         if (!this.views['$' + view]) {
-            this.log("Unknown deviantART muro view '%s'", view);
             return this;
         }
         this.views['$' + view].css('visibility', 'visible');
@@ -224,7 +217,6 @@ $.extend(DAMuro.prototype, {
             return;
         }
 
-        this.log("plugin receive", message);
         var data = message.data;
         if (!data.type) {
             return;
@@ -283,7 +275,6 @@ $.extend(DAMuro.prototype, {
         if (!this.contentWindow) {
             return;
         }
-        this.log("plugin send", message);
         this.contentWindow.postMessage(message, this.options.origin);
     },
 
