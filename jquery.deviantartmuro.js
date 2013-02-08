@@ -7,7 +7,7 @@
 
 "use strict";
 
-var version = "1.0.0";
+var version = "1.0.1";
 
 // $('.damuro-embeds').damuro({ setting: value }); // return original set for chaining
 // $('...').damuro(settings, function () { done; }, function () { fail; });
@@ -349,12 +349,13 @@ $.extend(DAMuro.prototype, {
      */
     url: function () {
         var mappedOptions = {
-                width:  'canvasWidth',
-                height: 'canvasHeight'
+                width:        'canvasWidth',
+                height:       'canvasHeight',
+                stash_folder: 'stashFolder'
             },
             embedOptions = {};
 
-        ['width', 'height', 'background', 'vm'].forEach(function (embedOption) {
+        ['width', 'height', 'background', 'stash_folder', 'vm'].forEach(function (embedOption) {
                 var option = mappedOptions[embedOption] || embedOption;
                 if (this.options[option] !== undefined) {
                     embedOptions[embedOption] = this.options[option];
