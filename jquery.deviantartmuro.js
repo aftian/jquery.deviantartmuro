@@ -349,12 +349,13 @@ $.extend(DAMuro.prototype, {
      */
     url: function () {
         var mappedOptions = {
-                width:  'canvasWidth',
-                height: 'canvasHeight'
+                width:        'canvasWidth',
+                height:       'canvasHeight',
+                stash_folder: 'stashFolder'
             },
             embedOptions = {};
 
-        ['width', 'height', 'background', 'vm'].forEach(function (embedOption) {
+        ['width', 'height', 'background', 'stash_folder', 'vm'].forEach(function (embedOption) {
                 var option = mappedOptions[embedOption] || embedOption;
                 if (this.options[option] !== undefined) {
                     embedOptions[embedOption] = this.options[option];
