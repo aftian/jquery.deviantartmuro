@@ -7,7 +7,7 @@
 
 "use strict";
 
-var version = "1.0.0";
+var version = "1.0.1";
 
 // $('.damuro-embeds').damuro({ setting: value }); // return original set for chaining
 // $('...').damuro(settings, function () { done; }, function () { fail; });
