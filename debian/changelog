@@ -1,22 +1,4 @@
-muro (0.4) suroboyo; urgency=low
-
-  * Fix Name muro.desktop
-
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Tue, 08 Oct 2013 20:28:54 +0700
-
-muro (0.3) suroboyo; urgency=low
-
-  * muro.desktop Chnange section
-
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Tue, 08 Oct 2013 20:19:11 +0700
-
-muro (0.2) suroboyo; urgency=low
-
-  * debian/install fix name file
-
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Tue, 08 Oct 2013 19:54:34 +0700
-
-muro (0.1) suroboyo; urgency=low
+muro (1.0.2-0blankon1) suroboyo; urgency=low
 
   * Initial release.
 
