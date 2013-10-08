@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Note5
+Name=Muro
 Comment=HTML5 Drawing Editor
 Exec=html5app /usr/share/muro/html/deviantart_muro_sandbox.html
 Icon=muro
