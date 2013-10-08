@@ -3,7 +3,7 @@ html /usr/share/muro
 images /usr/share/muro
 deviantartmuro.jquery.json /usr/share/muro
 jquery.deviantartmuro.js /usr/share/muro
-LINCENSES.txt /usr/share/muro
+LICENSES.txt /usr/share/muro
 README.mkdn /usr/share/doc/muro
 debian/muro.svg /usr/share/pixmaps
 debian/muro.desktop /usr/share/applications
