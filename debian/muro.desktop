@@ -5,5 +5,5 @@ Exec=html5app /usr/share/muro/html/deviantart_muro_sandbox.html
 Icon=muro
 Terminal=false
 Type=Application
-Categories=GNOME;GTK;Game;LogicGame;
+Categories=GNOME;GTK;Graphics;
 StartupNotify=true
