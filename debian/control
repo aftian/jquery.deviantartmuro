@@ -1,0 +1,16 @@
+Source: muro
+Section: editor
+Priority: optional
+Maintainer: BlankOn Developers <BlankOn-Dev@googlegroups.com>
+Standards-Version: 3.9.1
+Build-Depends: cdbs, debhelper (>= 7.3.5)
+
+Package: muro
+Architecture: all
+Depends: html5app 
+Description: jQuery plugin for embedding the HTML5 drawing app, deviantART muro, on your site.
+ muro is jQuery plugin for embedding the HTML5 drawing app, deviantART muro, on your site.
+
+
+
+

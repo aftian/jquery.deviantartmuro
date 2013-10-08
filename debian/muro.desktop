@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Note5
+Comment=HTML5 Drawing Editor
+Exec=html5app /usr/share/muro/html/deviantart_muro_sandbox.html
+Icon=muro
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Game;LogicGame;
+StartupNotify=true
