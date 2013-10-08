@@ -1,8 +1,8 @@
 examples /usr/share/muro
 html /usr/share/muro
 images /usr/share/muro
-devianartmuro.jquery.json /usr/share/muro
-jquery.devianartmuro.js /usr/share/muro
+deviantartmuro.jquery.json /usr/share/muro
+jquery.deviantartmuro.js /usr/share/muro
 LINCENSES.txt /usr/share/muro
 README.mkdn /usr/share/doc/muro
 debian/muro.svg /usr/share/pixmaps
